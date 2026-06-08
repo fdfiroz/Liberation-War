@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Listen to recorded interviews with freedom fighters, civilians, and leaders who witnessed the 1971 Bangladesh Liberation War.">
+  <meta name="keywords" content="Bangladesh Liberation War interviews, freedom fighter testimonies, 1971 oral history, Mukti Bahini">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Interviews — Liberation War Archive",
+    "description": "Collection of recorded interviews from the 1971 Bangladesh Liberation War."
+  }
+  </script>
+
+  <title>Interviews — Liberation War Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+        Liberation <span>Archive</span>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="documents.html" class="navbar__link">Documents</a>
+        <a href="interviews.html" class="navbar__link active">Interviews</a>
+        <a href="photographs.html" class="navbar__link">Photographs</a>
+        <a href="contact.html" class="navbar__cta"><i class="fas fa-paper-plane"></i> Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__decor page-hero__decor--1"></div>
+    <div class="page-hero__decor page-hero__decor--2"></div>
+    <div class="page-hero__content container">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Interviews</span>
+      </nav>
+      <h1 class="page-hero__title">Voices of Liberation</h1>
+      <p class="page-hero__subtitle">
+        Firsthand accounts from freedom fighters, civilians, and leaders who shaped the course of Bangladesh's independence.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTERVIEWS SECTION -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Pills -->
+      <div class="filter-pills" data-aos="fade-up">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="freedom-fighter">Freedom Fighters</button>
+        <button class="filter-pill" data-filter="civilian">Civilians</button>
+        <button class="filter-pill" data-filter="commander">Military Commanders</button>
+        <button class="filter-pill" data-filter="political">Political Leaders</button>
+        <button class="filter-pill" data-filter="journalist">Journalists</button>
+      </div>
+
+      <!-- Interviews Grid -->
+      <div class="grid grid--2" id="interviewsGrid">
+
+        <!-- Interview 1 -->
+        <div class="interview-card" data-role="freedom-fighter" data-aos="fade-up" data-aos-delay="50">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Abdul Karim" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Abdul Karim</h3>
+              <span class="interview-card__role">Freedom Fighter — Sector 2</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">We fought not just for land, but for our language, our identity, and the right to live with dignity as a free nation.</p>
+            <p class="interview-card__bio">Abdul Karim joined the Mukti Bahini at the age of 19. He participated in several key guerrilla operations in the Comilla and Noakhali regions during the Liberation War. After independence, he dedicated his life to documenting the stories of fellow fighters.</p>
+            <button class="interview-card__bio-toggle" onclick="this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'">
+              <i class="fas fa-chevron-down"></i> Toggle Biography
+            </button>
+          </div>
+          <div class="interview-card__player">
+            <audio controls class="interview-card__audio" preload="none">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 45 minutes</span>
+            <span style="font-size: 0.75rem; color: var(--clr-text-muted);">Recorded: January 2015</span>
+          </div>
+        </div>
+
+        <!-- Interview 2 -->
+        <div class="interview-card" data-role="civilian" data-aos="fade-up" data-aos-delay="100">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Fatema Begum" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Fatema Begum</h3>
+              <span class="interview-card__role">Civilian Witness — Dhaka</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">The night the army came, everything changed. We lost our home, but we never lost hope for our beloved Bangladesh.</p>
+            <p class="interview-card__bio">Fatema Begum was 24 years old during Operation Searchlight. She witnessed the initial crackdown in Dhaka and fled with her family to the Indian border. Her testimony provides a crucial civilian perspective on the displacement and suffering of ordinary Bangladeshis.</p>
+            <button class="interview-card__bio-toggle" onclick="this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'">
+              <i class="fas fa-chevron-down"></i> Toggle Biography
+            </button>
+          </div>
+          <div class="interview-card__player">
+            <audio controls class="interview-card__audio" preload="none">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 38 minutes</span>
+            <span style="font-size: 0.75rem; color: var(--clr-text-muted);">Recorded: March 2016</span>
+          </div>
+        </div>
+
+        <!-- Interview 3 -->
+        <div class="interview-card" data-role="commander" data-aos="fade-up" data-aos-delay="50">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Major Rafiq Uddin" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Major Rafiq Uddin</h3>
+              <span class="interview-card__role">Military Commander — Sector 7</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">Every sector, every village, every person contributed. This was not one man's war — it was a people's revolution.</p>
+            <p class="interview-card__bio">Major Rafiq served as a sector commander leading guerrilla operations in the northern regions. A trained military officer, he defected from the Pakistani army in March 1971 and organized one of the most effective resistance units.</p>
+            <button class="interview-card__bio-toggle" onclick="this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'">
+              <i class="fas fa-chevron-down"></i> Toggle Biography
+            </button>
+          </div>
+          <div class="interview-card__player">
+            <audio controls class="interview-card__audio" preload="none">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 52 minutes</span>
+            <span style="font-size: 0.75rem; color: var(--clr-text-muted);">Recorded: December 2014</span>
+          </div>
+        </div>
+
+        <!-- Interview 4 -->
+        <div class="interview-card" data-role="political" data-aos="fade-up" data-aos-delay="100">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Dr. Kamal Hossain" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Dr. Kamal Hossain</h3>
+              <span class="interview-card__role">Political Leader & Constitutional Architect</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">The constitution we drafted was not just a legal document — it was the embodiment of the aspirations and sacrifices of 75 million people.</p>
+            <p class="interview-card__bio">Dr. Kamal Hossain was one of the principal architects of the Constitution of Bangladesh. He served in key political roles during and after the Liberation War, and was instrumental in drafting the legal framework of the new nation.</p>
+            <button class="interview-card__bio-toggle" onclick="this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'">
+              <i class="fas fa-chevron-down"></i> Toggle Biography
+            </button>
+          </div>
+          <div class="interview-card__player">
+            <audio controls class="interview-card__audio" preload="none">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 63 minutes</span>
+            <span style="font-size: 0.75rem; color: var(--clr-text-muted);">Recorded: June 2017</span>
+          </div>
+        </div>
+
+        <!-- Interview 5 -->
+        <div class="interview-card" data-role="journalist" data-aos="fade-up" data-aos-delay="50">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Shamsul Huda" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Shamsul Huda</h3>
+              <span class="interview-card__role">War Correspondent & Journalist</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">My pen became my weapon. Every word I wrote was a testament to the courage I witnessed on those blood-soaked fields.</p>
+            <p class="interview-card__bio">Shamsul Huda was one of the few journalists who remained in Dhaka during the crackdown. He secretly documented atrocities and smuggled reports to international media, helping to bring global attention to the crisis.</p>
+            <button class="interview-card__bio-toggle" onclick="this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'">
+              <i class="fas fa-chevron-down"></i> Toggle Biography
+            </button>
+          </div>
+          <div class="interview-card__player">
+            <audio controls class="interview-card__audio" preload="none">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 41 minutes</span>
+            <span style="font-size: 0.75rem; color: var(--clr-text-muted);">Recorded: August 2018</span>
+          </div>
+        </div>
+
+        <!-- Interview 6 -->
+        <div class="interview-card" data-role="freedom-fighter" data-aos="fade-up" data-aos-delay="100">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Taramon Bibi" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Taramon Bibi</h3>
+              <span class="interview-card__role">Freedom Fighter — Narsingdi</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">They said women cannot fight. But I picked up a rifle and proved them wrong. Freedom knows no gender.</p>
+            <p class="interview-card__bio">Taramon Bibi is one of the most celebrated female freedom fighters of Bangladesh. She actively participated in combat operations and was awarded the Bir Protik, one of the highest gallantry awards for bravery during the Liberation War.</p>
+            <button class="interview-card__bio-toggle" onclick="this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'">
+              <i class="fas fa-chevron-down"></i> Toggle Biography
+            </button>
+          </div>
+          <div class="interview-card__player">
+            <audio controls class="interview-card__audio" preload="none">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 35 minutes</span>
+            <span style="font-size: 0.75rem; color: var(--clr-text-muted);">Recorded: February 2019</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" id="pagination">
+        <button class="pagination__btn" disabled><i class="fas fa-chevron-left"></i></button>
+        <button class="pagination__btn active">1</button>
+        <button class="pagination__btn">2</button>
+        <button class="pagination__btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="cta-banner" data-aos="zoom-in">
+        <h2>Share Your Story</h2>
+        <p>Were you or your family involved in the Liberation War? Your testimony is invaluable to preserving our history.</p>
+        <a href="contact.html" class="btn btn--gold btn--lg">
+          <i class="fas fa-microphone-alt"></i> Submit Your Interview
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+            Liberation <span>Archive</span>
+          </div>
+          <p class="footer__desc">Preserving the history, sacrifices, and memories of the 1971 Bangladesh Liberation War.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Explore</h4>
+          <div class="footer__links">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="documents.html"><i class="fas fa-chevron-right"></i> Documents</a>
+            <a href="interviews.html"><i class="fas fa-chevron-right"></i> Interviews</a>
+            <a href="photographs.html"><i class="fas fa-chevron-right"></i> Photographs</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Resources</h4>
+          <div class="footer__links">
+            <a href="#"><i class="fas fa-chevron-right"></i> About the War</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Timeline</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Bibliography</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__links">
+            <a href="mailto:info@liberationarchive.org"><i class="fas fa-envelope"></i> info@liberationarchive.org</a>
+            <a href="tel:+8801700000000"><i class="fas fa-phone"></i> +880 1700-000000</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Liberation War Archive. All rights reserved.</p>
+        <div class="footer__flag"><span class="footer__flag-icon"></span> জয় বাংলা — Joy Bangla</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the Liberation War Archive to submit documents, photographs, or share your story from the 1971 Bangladesh Liberation War.">
+  <meta name="keywords" content="contact Liberation War Archive, submit documents, share story 1971 war, contribute to archive">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us — Liberation War Archive",
+    "description": "Form to submit inquiries, provide feedback, or contribute materials to the archive."
+  }
+  </script>
+
+  <title>Contact & Contribute — Liberation War Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+        Liberation <span>Archive</span>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="documents.html" class="navbar__link">Documents</a>
+        <a href="interviews.html" class="navbar__link">Interviews</a>
+        <a href="photographs.html" class="navbar__link">Photographs</a>
+        <a href="contact.html" class="navbar__cta"><i class="fas fa-paper-plane"></i> Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__decor page-hero__decor--1"></div>
+    <div class="page-hero__decor page-hero__decor--2"></div>
+    <div class="page-hero__content container">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </nav>
+      <h1 class="page-hero__title">Contact & Contribute</h1>
+      <p class="page-hero__subtitle">
+        Help us preserve history. Submit your inquiries, provide feedback, or contribute documents, photographs, and oral histories.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        
+        <!-- Contact Form Side -->
+        <div data-aos="fade-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h2 class="contact-form__title">Send us a Message</h2>
+            <p class="contact-form__subtitle">Fill out the form below and our team will get back to you.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <div class="error-msg">Please enter your name</div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                <div class="error-msg">Please enter a valid email address</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject...</option>
+                <option value="inquiry">General Inquiry</option>
+                <option value="document_submission">Submit Documents/Photos</option>
+                <option value="interview_request">Record an Interview</option>
+                <option value="feedback">Website Feedback</option>
+              </select>
+              <div class="error-msg">Please select a subject</div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message <span class="required">*</span></label>
+              <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+              <div class="error-msg">Please enter your message</div>
+            </div>
+
+            <div class="form-group">
+              <label>Upload Files (Optional)</label>
+              <p style="font-size: 0.8rem; color: var(--clr-text-light); margin-bottom: 0.5rem;">If you are contributing materials, please upload high-resolution scans or photos.</p>
+              <label class="file-upload" for="file-upload">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <div class="file-upload__text">
+                  <strong>Click to browse</strong> or drag and drop files here
+                </div>
+                <div style="font-size: 0.75rem; color: var(--clr-text-muted); margin-top: 0.5rem;">Supported formats: PDF, JPG, PNG, MP3 (Max 10MB)</div>
+                <input type="file" id="file-upload" name="file" multiple accept=".pdf,.jpg,.jpeg,.png,.mp3">
+              </label>
+              <div id="file-names" style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--clr-green-deep);"></div>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+
+          <!-- Success Message (Hidden by default) -->
+          <div class="contact-form form-success" id="formSuccess">
+            <div class="form-success__icon"><i class="fas fa-check"></i></div>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. We appreciate your interest in the Liberation War Archive and will get back to you shortly.</p>
+            <button class="btn btn--outline" style="margin-top: 1.5rem;" onclick="document.getElementById('formSuccess').classList.remove('show'); document.getElementById('contactForm').style.display='block'; document.getElementById('contactForm').reset(); document.getElementById('file-names').textContent='';">
+              Send Another Message
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact Info Side -->
+        <div class="contact-info" data-aos="fade-left" data-aos-delay="200">
+          <div class="contact-info-card">
+            <h3 class="contact-info-card__title"><i class="fas fa-address-book"></i> Get in Touch</h3>
+            <p style="color: var(--clr-text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">
+              Whether you want to share a piece of history, report an issue, or just say hello, we'd love to hear from you.
+            </p>
+            
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-info__text">
+                <h4>Archive Location</h4>
+                <p>Liberation War Museum<br>Sher-e-Bangla Nagar<br>Dhaka 1207, Bangladesh</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-info__text">
+                <h4>Phone</h4>
+                <a href="tel:+8801700000000">+880 1700-000000</a>
+                <p>Mon-Fri, 9am - 5pm</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info__text">
+                <h4>Email</h4>
+                <a href="mailto:info@liberationarchive.org">info@liberationarchive.org</a>
+                <a href="mailto:contribute@liberationarchive.org">contribute@liberationarchive.org</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <!-- Embedded Google Map -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5369651717326!2d90.36980531536294!3d23.763889984582845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0aeb13813a1%3A0x6b100bb1339ce0df!2sLiberation%20War%20Museum!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Liberation War Museum Map Location">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+            Liberation <span>Archive</span>
+          </div>
+          <p class="footer__desc">Preserving the history, sacrifices, and memories of the 1971 Bangladesh Liberation War.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Explore</h4>
+          <div class="footer__links">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="documents.html"><i class="fas fa-chevron-right"></i> Documents</a>
+            <a href="interviews.html"><i class="fas fa-chevron-right"></i> Interviews</a>
+            <a href="photographs.html"><i class="fas fa-chevron-right"></i> Photographs</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Resources</h4>
+          <div class="footer__links">
+            <a href="#"><i class="fas fa-chevron-right"></i> About the War</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Timeline</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Bibliography</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__links">
+            <a href="mailto:info@liberationarchive.org"><i class="fas fa-envelope"></i> info@liberationarchive.org</a>
+            <a href="tel:+8801700000000"><i class="fas fa-phone"></i> +880 1700-000000</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Liberation War Archive. All rights reserved.</p>
+        <div class="footer__flag"><span class="footer__flag-icon"></span> জয় বাংলা — Joy Bangla</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

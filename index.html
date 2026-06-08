@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liberation War Archive — A comprehensive digital archive preserving the history, documents, interviews, and photographs of the 1971 Bangladesh Liberation War.">
+  <meta name="keywords" content="Bangladesh, Liberation War, 1971, Mukti Juddho, Independence, Archive, History, Documents, Photographs">
+  <meta name="author" content="Liberation War Archive">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Liberation War Archive — মুক্তিযুদ্ধ আর্কাইভ">
+  <meta property="og:description" content="Preserving the history and memories of the 1971 Bangladesh Liberation War through documents, interviews, and photographs.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="asset/hero-bg.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Liberation War Archive",
+    "alternateName": "মুক্তিযুদ্ধ আর্কাইভ",
+    "description": "A comprehensive digital archive preserving the history of the 1971 Bangladesh Liberation War.",
+    "url": "./"
+  }
+  </script>
+
+  <title>Liberation War Archive — মুক্তিযুদ্ধ আর্কাইভ</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- AOS.js Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+        Liberation <span>Archive</span>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link active">Home</a>
+        <a href="documents.html" class="navbar__link">Documents</a>
+        <a href="interviews.html" class="navbar__link">Interviews</a>
+        <a href="photographs.html" class="navbar__link">Photographs</a>
+        <a href="contact.html" class="navbar__cta"><i class="fas fa-paper-plane"></i> Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="asset/hero-bg.png" alt="Bangladesh Liberation War 1971" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content" data-aos="fade-up" data-aos-duration="1000">
+      <div class="hero__badge">
+        <i class="fas fa-star"></i>
+        Since 1971 — মুক্তিযুদ্ধ আর্কাইভ
+      </div>
+      <h1 class="hero__title">
+        Preserving the Legacy of
+        <span>Bangladesh's Liberation</span>
+      </h1>
+      <p class="hero__subtitle">
+        A comprehensive digital archive dedicated to preserving the history, sacrifices, and memories 
+        of the 1971 Liberation War — so future generations may remember and honor.
+      </p>
+      <div class="hero__actions">
+        <a href="documents.html" class="btn btn--primary btn--lg">
+          <i class="fas fa-book-open"></i> Explore Archive
+        </a>
+        <a href="#about" class="btn btn--secondary btn--lg">
+          <i class="fas fa-info-circle"></i> Learn More
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / INTRODUCTION ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-header__label">About The Archive</span>
+        <h2 class="section-header__title">Remembering Our History</h2>
+        <p class="section-header__subtitle">
+          The Liberation War of 1971 was a defining moment in the history of Bangladesh — a nine-month struggle 
+          for independence that shaped the identity of an entire nation.
+        </p>
+      </div>
+      <div class="grid grid--3" style="align-items: start;">
+        <div data-aos="fade-up" data-aos-delay="100" style="text-align: center; padding: 2rem;">
+          <i class="fas fa-scroll" style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 1rem; display: block;"></i>
+          <h3 style="font-family: var(--ff-heading); font-size: 1.25rem; margin-bottom: 0.75rem;">Historical Documents</h3>
+          <p style="color: var(--clr-text-light); font-size: 0.95rem; line-height: 1.7;">
+            Access treaties, declarations, official correspondence, and government records from the war era — 
+            meticulously cataloged and preserved.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" style="text-align: center; padding: 2rem;">
+          <i class="fas fa-microphone-alt" style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 1rem; display: block;"></i>
+          <h3 style="font-family: var(--ff-heading); font-size: 1.25rem; margin-bottom: 0.75rem;">Oral Testimonies</h3>
+          <p style="color: var(--clr-text-light); font-size: 0.95rem; line-height: 1.7;">
+            Listen to firsthand accounts from freedom fighters, civilians, and political leaders who witnessed 
+            and shaped the course of history.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" style="text-align: center; padding: 2rem;">
+          <i class="fas fa-camera-retro" style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 1rem; display: block;"></i>
+          <h3 style="font-family: var(--ff-heading); font-size: 1.25rem; margin-bottom: 0.75rem;">Photographic Records</h3>
+          <p style="color: var(--clr-text-light); font-size: 0.95rem; line-height: 1.7;">
+            Explore a curated gallery of powerful photographs capturing key moments, places, and people 
+            from the nine months of liberation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATISTICS ========== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="stats" data-aos="fade-up">
+        <div class="stat">
+          <div class="stat__number" data-count="350">0</div>
+          <div class="stat__label">Documents Archived</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="120">0</div>
+          <div class="stat__label">Interviews Recorded</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="2500">0</div>
+          <div class="stat__label">Photographs Preserved</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="50">0</div>
+          <div class="stat__label">Years of History</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED DOCUMENTS ========== -->
+  <section class="section section--alt" id="featured-documents">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-header__label">Featured Collection</span>
+        <h2 class="section-header__title">Historic Documents</h2>
+        <p class="section-header__subtitle">
+          Explore key documents that shaped the course of Bangladesh's independence movement.
+        </p>
+      </div>
+      <div class="featured-grid">
+        <!-- Document Card 1 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card__image">
+            <img src="asset/documents-hero.png" alt="Proclamation of Independence">
+            <div class="card__image-overlay"></div>
+            <span class="card__badge">Declaration</span>
+          </div>
+          <div class="card__body">
+            <div class="card__date"><i class="far fa-calendar"></i> March 26, 1971</div>
+            <h3 class="card__title"><a href="document-detail.html">Proclamation of Independence</a></h3>
+            <p class="card__text">The official declaration that proclaimed the independence of Bangladesh, read on the night of March 25-26, 1971.</p>
+            <div class="card__footer">
+              <a href="document-detail.html" class="card__link">Read More <i class="fas fa-arrow-right"></i></a>
+              <span style="font-size: 0.75rem; color: var(--clr-text-muted);"><i class="fas fa-eye"></i> 2.4k views</span>
+            </div>
+          </div>
+        </div>
+        <!-- Document Card 2 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card__image">
+            <img src="asset/documents-hero.png" alt="Instrument of Surrender">
+            <div class="card__image-overlay"></div>
+            <span class="card__badge">Treaty</span>
+          </div>
+          <div class="card__body">
+            <div class="card__date"><i class="far fa-calendar"></i> December 16, 1971</div>
+            <h3 class="card__title"><a href="document-detail.html">Instrument of Surrender</a></h3>
+            <p class="card__text">The document signed by Lt. Gen. A.A.K. Niazi marking the unconditional surrender of Pakistani forces in Dhaka.</p>
+            <div class="card__footer">
+              <a href="document-detail.html" class="card__link">Read More <i class="fas fa-arrow-right"></i></a>
+              <span style="font-size: 0.75rem; color: var(--clr-text-muted);"><i class="fas fa-eye"></i> 3.1k views</span>
+            </div>
+          </div>
+        </div>
+        <!-- Document Card 3 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card__image">
+            <img src="asset/documents-hero.png" alt="Six-Point Movement Charter">
+            <div class="card__image-overlay"></div>
+            <span class="card__badge">Charter</span>
+          </div>
+          <div class="card__body">
+            <div class="card__date"><i class="far fa-calendar"></i> February 5, 1966</div>
+            <h3 class="card__title"><a href="document-detail.html">Six-Point Movement Charter</a></h3>
+            <p class="card__text">The pivotal six-point demand presented by Sheikh Mujibur Rahman that became the foundation of the independence movement.</p>
+            <div class="card__footer">
+              <a href="document-detail.html" class="card__link">Read More <i class="fas fa-arrow-right"></i></a>
+              <span style="font-size: 0.75rem; color: var(--clr-text-muted);"><i class="fas fa-eye"></i> 1.8k views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;" data-aos="fade-up">
+        <a href="documents.html" class="btn btn--outline">
+          <i class="fas fa-archive"></i> View All Documents
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE ========== -->
+  <section class="section section--dark" id="timeline">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-header__label">Timeline</span>
+        <h2 class="section-header__title">Key Events of 1971</h2>
+        <p class="section-header__subtitle">
+          A chronological journey through the pivotal moments of the Liberation War.
+        </p>
+      </div>
+      <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline__line"></div>
+        <div class="timeline__items">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">March 7</div>
+            <div class="timeline__title">Historic Speech at Ramna Race Course</div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">March 25</div>
+            <div class="timeline__title">Operation Searchlight Begins</div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">March 26</div>
+            <div class="timeline__title">Declaration of Independence</div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">April 17</div>
+            <div class="timeline__title">Formation of Mujibnagar Government</div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">July–Nov</div>
+            <div class="timeline__title">Guerrilla Warfare Intensifies</div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">Dec 3</div>
+            <div class="timeline__title">India Enters the War</div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">Dec 16</div>
+            <div class="timeline__title">Victory Day — Bijoy Dibosh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED INTERVIEWS ========== -->
+  <section class="section" id="featured-interviews">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-header__label">Voices of Freedom</span>
+        <h2 class="section-header__title">Featured Interviews</h2>
+        <p class="section-header__subtitle">
+          Hear firsthand accounts from those who lived through and fought in the Liberation War.
+        </p>
+      </div>
+      <div class="featured-grid">
+        <!-- Interview 1 -->
+        <div class="interview-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Abdul Karim" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Abdul Karim</h3>
+              <span class="interview-card__role">Freedom Fighter — Sector 2</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">We fought not just for land, but for our language, our identity, and the right to live with dignity as a free nation.</p>
+            <p class="interview-card__bio">A brave veteran of Sector 2, Abdul Karim joined the Mukti Bahini at the age of 19 and participated in several key operations during the war.</p>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 45 min</span>
+            <a href="interviews.html" class="card__link">Listen <i class="fas fa-headphones"></i></a>
+          </div>
+        </div>
+        <!-- Interview 2 -->
+        <div class="interview-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Fatema Begum" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Fatema Begum</h3>
+              <span class="interview-card__role">Civilian Witness</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">The night the army came, everything changed. We lost our home, but we never lost hope for our beloved Bangladesh.</p>
+            <p class="interview-card__bio">Fatema Begum survived the 1971 crackdown in Dhaka and became a refugee. Her testimony provides crucial civilian perspective on the war.</p>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 38 min</span>
+            <a href="interviews.html" class="card__link">Listen <i class="fas fa-headphones"></i></a>
+          </div>
+        </div>
+        <!-- Interview 3 -->
+        <div class="interview-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="interview-card__header">
+            <img src="asset/interview-1.png" alt="Major Rafiq" class="interview-card__avatar">
+            <div>
+              <h3 class="interview-card__name">Major Rafiq Uddin</h3>
+              <span class="interview-card__role">Military Commander</span>
+            </div>
+          </div>
+          <div class="interview-card__body">
+            <p class="interview-card__quote">Every sector, every village, every person contributed. This was not one man's war — it was a people's revolution.</p>
+            <p class="interview-card__bio">Major Rafiq served as a sector commander and led guerrilla operations in the northern regions of Bangladesh during the war.</p>
+          </div>
+          <div class="interview-card__footer">
+            <span class="interview-card__duration"><i class="far fa-clock"></i> 52 min</span>
+            <a href="interviews.html" class="card__link">Listen <i class="fas fa-headphones"></i></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;" data-aos="fade-up">
+        <a href="interviews.html" class="btn btn--outline">
+          <i class="fas fa-microphone-alt"></i> View All Interviews
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PHOTOGRAPHS ========== -->
+  <section class="section section--alt" id="featured-photos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-header__label">Visual History</span>
+        <h2 class="section-header__title">From the Lens of History</h2>
+        <p class="section-header__subtitle">
+          Powerful photographs capturing the struggle, sacrifice, and triumph of the Liberation War.
+        </p>
+      </div>
+      <div class="gallery-grid gallery-grid--masonry" data-aos="fade-up" data-aos-delay="200">
+        <a href="asset/gallery-1.png" class="gallery-item glightbox" data-gallery="featured" data-title="The Surrender Ceremony" data-description="December 16, 1971 — Dhaka">
+          <img src="asset/gallery-1.png" alt="Surrender Ceremony, 1971">
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">The Surrender Ceremony</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> December 16, 1971</span>
+          </div>
+        </a>
+        <a href="asset/gallery-2.png" class="gallery-item glightbox" data-gallery="featured" data-title="Victory Celebrations" data-description="Dhaka, December 1971">
+          <img src="asset/gallery-2.png" alt="Victory Celebrations">
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Victory Celebrations</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> December 1971</span>
+          </div>
+        </a>
+        <a href="asset/gallery-3.png" class="gallery-item glightbox" data-gallery="featured" data-title="Freedom Fighters" data-description="Mukti Bahini guerrilla fighters">
+          <img src="asset/gallery-3.png" alt="Freedom Fighters">
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Freedom Fighters</h4>
+            <span class="gallery-item__meta"><i class="fas fa-map-marker-alt"></i> Rural Bangladesh</span>
+          </div>
+        </a>
+        <a href="asset/gallery-4.png" class="gallery-item glightbox" data-gallery="featured" data-title="Refugees Crossing the Border" data-description="1971 — River crossing during the refugee crisis">
+          <img src="asset/gallery-4.png" alt="Refugees Crossing">
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Refugees Crossing the Border</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> 1971</span>
+          </div>
+        </a>
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;" data-aos="fade-up">
+        <a href="photographs.html" class="btn btn--outline">
+          <i class="fas fa-images"></i> View Full Gallery
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner" data-aos="zoom-in">
+        <h2>Contribute to the Archive</h2>
+        <p>Do you have documents, photographs, or stories from the Liberation War? Help us preserve history for future generations.</p>
+        <a href="contact.html" class="btn btn--gold btn--lg">
+          <i class="fas fa-hand-holding-heart"></i> Submit Materials
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+            Liberation <span>Archive</span>
+          </div>
+          <p class="footer__desc">
+            Preserving the history, sacrifices, and memories of the 1971 Bangladesh Liberation War. 
+            A digital initiative dedicated to ensuring future generations remember and honor the 
+            struggle for independence.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Explore</h4>
+          <div class="footer__links">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="documents.html"><i class="fas fa-chevron-right"></i> Documents</a>
+            <a href="interviews.html"><i class="fas fa-chevron-right"></i> Interviews</a>
+            <a href="photographs.html"><i class="fas fa-chevron-right"></i> Photographs</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Resources</h4>
+          <div class="footer__links">
+            <a href="#"><i class="fas fa-chevron-right"></i> About the War</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Timeline</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Bibliography</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Partners</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> FAQ</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__links">
+            <a href="mailto:info@liberationarchive.org"><i class="fas fa-envelope"></i> info@liberationarchive.org</a>
+            <a href="tel:+8801700000000"><i class="fas fa-phone"></i> +880 1700-000000</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2024 Liberation War Archive. All rights reserved.
+        </p>
+        <div class="footer__flag">
+          <span class="footer__flag-icon"></span>
+          জয় বাংলা — Joy Bangla
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

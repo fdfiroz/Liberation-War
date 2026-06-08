@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse a curated gallery of historical photographs from the 1971 Bangladesh Liberation War — key moments, places, and people.">
+  <meta name="keywords" content="Bangladesh Liberation War photos, 1971 photographs, Mukti Bahini images, historical gallery">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Photographs — Liberation War Archive",
+    "description": "A curated gallery of photographs from the 1971 Bangladesh Liberation War."
+  }
+  </script>
+
+  <title>Photographs — Liberation War Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+        Liberation <span>Archive</span>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="documents.html" class="navbar__link">Documents</a>
+        <a href="interviews.html" class="navbar__link">Interviews</a>
+        <a href="photographs.html" class="navbar__link active">Photographs</a>
+        <a href="contact.html" class="navbar__cta"><i class="fas fa-paper-plane"></i> Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__decor page-hero__decor--1"></div>
+    <div class="page-hero__decor page-hero__decor--2"></div>
+    <div class="page-hero__content container">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Photographs</span>
+      </nav>
+      <h1 class="page-hero__title">Photographic Gallery</h1>
+      <p class="page-hero__subtitle">
+        Powerful images capturing the struggle, sacrifice, and triumph of the 1971 Liberation War.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section">
+    <div class="container">
+      <!-- Category Filters -->
+      <div class="filter-pills" data-aos="fade-up">
+        <button class="filter-pill active" data-filter="all">All Photos</button>
+        <button class="filter-pill" data-filter="events">Events</button>
+        <button class="filter-pill" data-filter="people">People</button>
+        <button class="filter-pill" data-filter="locations">Locations</button>
+        <button class="filter-pill" data-filter="aftermath">Aftermath</button>
+      </div>
+
+      <!-- Gallery Count -->
+      <div style="margin-bottom: 1.5rem; color: var(--clr-text-light); font-size: 0.9rem;" data-aos="fade-up">
+        Showing <strong id="photoCount">12</strong> photographs
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="gallery-grid" id="galleryGrid" data-aos="fade-up">
+
+        <!-- Photo 1 -->
+        <div class="gallery-item" data-category="events">
+          <a href="asset/gallery-1.png" class="glightbox" data-gallery="war-photos" data-title="The Surrender Ceremony" data-description="December 16, 1971 — Lt. Gen. A.A.K. Niazi signs the Instrument of Surrender at Ramna Race Course, Dhaka. This moment marked the end of the nine-month Liberation War and the birth of Bangladesh. | Photographer: Unknown | Location: Dhaka">
+            <img src="asset/gallery-1.png" alt="Surrender Ceremony, December 16, 1971">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">The Surrender Ceremony</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> December 16, 1971 <i class="fas fa-map-marker-alt"></i> Dhaka</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-1.png', 'surrender-ceremony.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item" data-category="events">
+          <a href="asset/gallery-2.png" class="glightbox" data-gallery="war-photos" data-title="Victory Day Celebrations" data-description="Dhaka, December 1971 — Jubilant crowds flood the streets celebrating the birth of an independent Bangladesh. | Photographer: Unknown | Location: Dhaka">
+            <img src="asset/gallery-2.png" alt="Victory celebrations in Dhaka, December 1971">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Victory Day Celebrations</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> December 1971 <i class="fas fa-map-marker-alt"></i> Dhaka</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-2.png', 'victory-celebrations.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item" data-category="people">
+          <a href="asset/gallery-3.png" class="glightbox" data-gallery="war-photos" data-title="Mukti Bahini Freedom Fighters" data-description="A group of Mukti Bahini guerrilla fighters in a rural village during the Liberation War. These brave men and women formed the backbone of the resistance. | Location: Rural Bangladesh, 1971">
+            <img src="asset/gallery-3.png" alt="Mukti Bahini Freedom Fighters">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Mukti Bahini Freedom Fighters</h4>
+            <span class="gallery-item__meta"><i class="fas fa-users"></i> Mukti Bahini <i class="fas fa-map-marker-alt"></i> Rural Bangladesh</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-3.png', 'mukti-bahini.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-item" data-category="people">
+          <a href="asset/gallery-4.png" class="glightbox" data-gallery="war-photos" data-title="Refugees Crossing the Border" data-description="Millions of Bengali civilians fled across the border during the 1971 war, creating one of the largest refugee crises of the 20th century. | Location: India-Bangladesh Border, 1971">
+            <img src="asset/gallery-4.png" alt="Refugees crossing river during 1971 war">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Refugees Crossing the Border</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> 1971 <i class="fas fa-map-marker-alt"></i> Border Region</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-4.png', 'refugees.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 5 (reuse images with different captions) -->
+        <div class="gallery-item" data-category="locations">
+          <a href="asset/gallery-1.png" class="glightbox" data-gallery="war-photos" data-title="Ramna Race Course, Dhaka" data-description="The historic Ramna Race Course (now Suhrawardy Udyan) in Dhaka — the site of the 7th March speech and the surrender ceremony. | Location: Dhaka">
+            <img src="asset/gallery-1.png" alt="Ramna Race Course, Dhaka">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Ramna Race Course, Dhaka</h4>
+            <span class="gallery-item__meta"><i class="fas fa-map-marker-alt"></i> Dhaka</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-1.png', 'ramna-race-course.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="gallery-item" data-category="events">
+          <a href="asset/gallery-2.png" class="glightbox" data-gallery="war-photos" data-title="Flag Raising Ceremony" data-description="The Bangladesh flag (green with red circle) being raised for the first time as an independent nation. | Location: Dhaka, December 1971">
+            <img src="asset/gallery-2.png" alt="Bangladesh flag being raised">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Flag Raising Ceremony</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> December 1971</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-2.png', 'flag-raising.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 7 -->
+        <div class="gallery-item" data-category="people">
+          <a href="asset/gallery-3.png" class="glightbox" data-gallery="war-photos" data-title="Women of the Liberation War" data-description="Women played a critical role in the Liberation War — as fighters, nurses, spies, and organizers. Their contribution was fundamental to the success of the movement. | Location: Bangladesh, 1971">
+            <img src="asset/gallery-3.png" alt="Women during the Liberation War">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Women of the Liberation War</h4>
+            <span class="gallery-item__meta"><i class="fas fa-users"></i> Women Fighters</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-3.png', 'women-fighters.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 8 -->
+        <div class="gallery-item" data-category="aftermath">
+          <a href="asset/gallery-4.png" class="glightbox" data-gallery="war-photos" data-title="Return of the Refugees" data-description="After victory in December 1971, millions of refugees began the journey home. The scene of families returning to their homeland was both joyous and heartbreaking. | Location: Bangladesh, January 1972">
+            <img src="asset/gallery-4.png" alt="Refugees returning home after the war">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Return of the Refugees</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> January 1972</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-4.png', 'refugees-return.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 9 -->
+        <div class="gallery-item" data-category="locations">
+          <a href="asset/hero-bg.png" class="glightbox" data-gallery="war-photos" data-title="The Fields of Freedom" data-description="The lush green fields of Bangladesh — the very land that inspired the green of the national flag and for which millions sacrificed everything. | Location: Rural Bangladesh">
+            <img src="asset/hero-bg.png" alt="Fields of Bangladesh">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">The Fields of Freedom</h4>
+            <span class="gallery-item__meta"><i class="fas fa-map-marker-alt"></i> Rural Bangladesh</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/hero-bg.png', 'fields-of-freedom.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 10 -->
+        <div class="gallery-item" data-category="aftermath">
+          <a href="asset/gallery-1.png" class="glightbox" data-gallery="war-photos" data-title="Victory Parade" data-description="Joint forces of the Mukti Bahini and the Indian Armed Forces march through Dhaka following the liberation. | Location: Dhaka, December 1971">
+            <img src="asset/gallery-1.png" alt="Victory parade in Dhaka">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Victory Parade</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> December 1971 <i class="fas fa-map-marker-alt"></i> Dhaka</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-1.png', 'victory-parade.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 11 -->
+        <div class="gallery-item" data-category="events">
+          <a href="asset/gallery-3.png" class="glightbox" data-gallery="war-photos" data-title="Guerrilla Training Camp" data-description="Mukti Bahini recruits undergoing training at a guerrilla camp. Young men and women trained in small arms, explosives, and sabotage operations. | Location: Bangladesh-India border, 1971">
+            <img src="asset/gallery-3.png" alt="Guerrilla training camp">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">Guerrilla Training Camp</h4>
+            <span class="gallery-item__meta"><i class="fas fa-shield-alt"></i> Mukti Bahini Training</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-3.png', 'training-camp.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Photo 12 -->
+        <div class="gallery-item" data-category="aftermath">
+          <a href="asset/gallery-2.png" class="glightbox" data-gallery="war-photos" data-title="A New Dawn for Bangladesh" data-description="The people of Bangladesh celebrate their newly won independence. After nine months of war, the nation looked forward to building a free and sovereign country. | Location: Dhaka, December 1971">
+            <img src="asset/gallery-2.png" alt="Celebrating independence">
+          </a>
+          <div class="gallery-item__overlay">
+            <h4 class="gallery-item__title">A New Dawn for Bangladesh</h4>
+            <span class="gallery-item__meta"><i class="far fa-calendar"></i> December 1971</span>
+          </div>
+          <div class="gallery-item__actions">
+            <button class="gallery-item__action-btn" title="Download" onclick="downloadImage('asset/gallery-2.png', 'new-dawn.png')"><i class="fas fa-download"></i></button>
+            <button class="gallery-item__action-btn" title="Zoom"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="pagination__btn" disabled><i class="fas fa-chevron-left"></i></button>
+        <button class="pagination__btn active">1</button>
+        <button class="pagination__btn">2</button>
+        <button class="pagination__btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="navbar__logo-icon"><i class="fas fa-landmark"></i></div>
+            Liberation <span>Archive</span>
+          </div>
+          <p class="footer__desc">Preserving the history, sacrifices, and memories of the 1971 Bangladesh Liberation War.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Explore</h4>
+          <div class="footer__links">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="documents.html"><i class="fas fa-chevron-right"></i> Documents</a>
+            <a href="interviews.html"><i class="fas fa-chevron-right"></i> Interviews</a>
+            <a href="photographs.html"><i class="fas fa-chevron-right"></i> Photographs</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Resources</h4>
+          <div class="footer__links">
+            <a href="#"><i class="fas fa-chevron-right"></i> About the War</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Timeline</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Bibliography</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__links">
+            <a href="mailto:info@liberationarchive.org"><i class="fas fa-envelope"></i> info@liberationarchive.org</a>
+            <a href="tel:+8801700000000"><i class="fas fa-phone"></i> +880 1700-000000</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Liberation War Archive. All rights reserved.</p>
+        <div class="footer__flag"><span class="footer__flag-icon"></span> জয় বাংলা — Joy Bangla</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
